@@ -1,4 +1,4 @@
- *{
+*{
 	box-sizing: border-box;
 }
 h1, h2,h3{
@@ -29,11 +29,11 @@ main{
 img[alt="pumpkin bread"]{
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 5px 5px 2px #d7e0df;
+    	margin-right: auto;
+    	margin-bottom: 10px;
+    	max-width: 100%;
+    	height: auto;
+    	box-shadow: 5px 5px 2px #d7e0df;
 }
 .ingredients li:nth-of-type(even){
 	background-color: #d9e2e1;
@@ -63,13 +63,13 @@ footer{
 		flex-direction: row;
 	}
 	.ingredients ul{
-	column-count: 1;
-	border-right: 2px solid #2a8978;
+		column-count: 1;
+		border-right: 2px solid #2a8978;
 	}
 	
 	header{
-	background-image: url('../images/background_pattern_small.jpg');
-	background-repeat: repeat;
+		background-image: url('../images/background_pattern_small.jpg');
+		background-repeat: repeat;
      }
 	main{
 		background-image: linear-gradient(to right bottom, #9fcc2e, #f5f7f2, #3fc6ae, #f5f7f2, #9fcc2e, #f5f7f2);
