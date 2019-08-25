@@ -1,0 +1,119 @@
+ *{
+	box-sizing: border-box;
+}
+h1, h2,h3{
+	text-align: center;
+}
+h1{
+	color: #2a8978;
+	padding: 0px;
+	margin: 0px;
+}
+h2{
+	color: #ed921c;
+	border-bottom: 1px solid #2a8978;
+}
+h3{
+	color: #2a8978;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	max-width: 1920px; 
+	height: 100vh;
+	background-color: #aee5d7;
+}
+main{
+	padding-left: 20px;
+}	
+img[alt="pumpkin bread"]{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 2px #d7e0df;
+}
+.ingredients li:nth-of-type(even){
+	background-color: #d9e2e1;
+}
+article, header{
+	display: flex;
+	flex-direction: column;
+}
+figure{
+	display: none;
+}
+.ingredients ul{
+	column-count: 2;
+	column-gap: 35px;
+	padding:0 5px;
+}
+footer{
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+	
+
+/*for larger screens*/
+@media screen and (min-width: 768px){
+	header, article{
+		display: flex;
+		flex-direction: row;
+	}
+	.ingredients ul{
+	column-count: 1;
+	border-right: 2px solid #2a8978;
+	}
+	
+	header{
+	background-image: url('../images/background_pattern_small.jpg');
+	background-repeat: repeat;
+     }
+	main{
+		background-image: linear-gradient(to right bottom, #9fcc2e, #f5f7f2, #3fc6ae, #f5f7f2, #9fcc2e, #f5f7f2);
+	}
+	figure{
+		display: inline-block;
+		margin: 0px;
+		padding: 0px;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: auto;
+	}
+	img{
+		filter: contrast(120%);
+	}
+	h1{
+		font-size: 6em;
+		color: #2a8978;
+		text-shadow: 7px 7px #bef435;
+		margin-right: auto;
+	}
+	h2{
+		font-size: 4em;
+		text-align: center;
+		margin: 0px;
+		padding-top: 10px;
+		border: none;
+	}
+	h3{
+		font-size: 2.5em;
+	}
+	li{
+		font-size: 1.1em;
+	}
+	footer{
+		font-size: 1em;
+		margin-bottom: 0px;
+		padding-bottom: 10px;
+	}
+	.instructions{
+		flex-basis: 70%;
+}
+	.ingredients{
+		flex-basis: 30%;
+}
+}
+	
